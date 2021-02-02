@@ -1,0 +1,78 @@
+html, body {
+  --white: #ffffff;
+  --whiteAlfa: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --mainDark: #42413c;
+  --dark: #2a2626;
+  --darkAlfa: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+
+  --main-font: 'Open Sans', sans-serif;
+  --accent-font: 'Neucha', cursive;
+  margin: 0;
+  width: 1440px;
+
+  font-size: 16px;
+  line-height: 1.6em;
+  font-family: var(--main-font);
+  color: var(--dark);
+}
+
+img {
+	max-width: 100%;
+  height: auto;
+
+	vertical-align: middle;  /**/
+}
+
+
+.button {
+  padding: 11px 24px;
+
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+
+  background-color: var(--main);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ea7600;
+}
+
+.container {
+  max-width: 1110px;
+}
+
+.heading {
+  line-height: 1.2em;
+  font-family: var(--accent-font);
+}
+
+.heading__accent {
+  display: block;
+
+  color: var(--main);
+}
+
+.heading--h1 {
+  font-size: 72px;
+}
+
+.heading--h2 {
+  font-size: 60px;
+}
+
+.heading--h3 {
+  font-size: 34px;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  text-align: center;
+}
