@@ -47,6 +47,7 @@ img {
 }
 
 .button {
+  display: inline-block;
   padding: 12px 24px;
   border: none;
 
@@ -120,9 +121,22 @@ h3 {
 }
 
 .section--bg {
-  background-image: url('../img/bg_pattern\(op-90\).png');
+  position: relative;
+}
+
+.section--bg::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url('../img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.1;
+
+  content: "";
 }
 
 .section--light {
@@ -244,6 +258,8 @@ h3 {
   position: relative;
 
   padding-top: 100px;
+
+  background-color: var(--light);
 }
 
 .intro__picture {
