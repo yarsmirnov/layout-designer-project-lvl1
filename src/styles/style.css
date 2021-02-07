@@ -254,10 +254,8 @@ h3 {
   color: var(--white);
 }
 
-.section--intro {
+.section-intro {
   position: relative;
-
-  padding-top: 100px;
 
   background-color: var(--light);
 }
