@@ -288,11 +288,11 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.section--cards {
+.section--navigation {
   background-color: var(--mainDark);
 }
 
-.cards-list {
+.navigation-list {
   display: flex;
 
   flex-wrap: wrap;
@@ -303,11 +303,11 @@ h3 {
 
   list-style: none;
 
-  counter-reset: cardscounter;
+  counter-reset: navigationcounter;
 }
 
-.cards-list__intro,
-.cards-list__item {
+.navigation-list__intro,
+.navigation-list__item {
   flex: 0 0 350px;
   box-sizing: border-box;
 
@@ -316,7 +316,7 @@ h3 {
   padding: 5px;
 }
 
-.cards-list__item {
+.navigation-list__item {
   position: relative;
 
   padding: 127px 24px 24px;
@@ -324,7 +324,7 @@ h3 {
   background-color: var(--light);
 }
 
-.cards-list__item::before {
+.navigation-list__item::before {
   position: absolute;
   top: 23px;
   left: 24px;
@@ -333,11 +333,11 @@ h3 {
   font-family: var(--accent-font);
   line-height: 1;
 
-  content: counter(cardscounter);
-  counter-increment: cardscounter;
+  content: counter(navigationcounter);
+  counter-increment: navigationcounter;
 }
 
-.cards-list__item-heading {
+.navigation-list__item-heading {
   margin: 0 0 20px;
 
   font-size: 34px;
@@ -345,31 +345,31 @@ h3 {
   line-height: 1.2em;
 }
 
-.cards-list__item--intro {
+.navigation-list__item--intro {
   padding: 0;
 
   background-color: transparent;
 }
 
-.cards-list__item--intro::before {
+.navigation-list__item--intro::before {
   content: none;
 }
 
-.cards-list__item--intro .heading {
+.navigation-list__item--intro .heading {
   font-weight: 400;
   font-size: 52px;
   line-height: 1.2em;
 }
 
-.cards-list__item--intro .heading--h3 span {
+.navigation-list__item--intro .heading--h3 span {
   color: var(--white);
 }
 
-.cards-list__item-link {
+.navigation-list__item-link {
   text-decoration: none;
 }
 
-.cards-list__item-text {
+.navigation-list__item-text {
   margin: 0 0 -3px;
 }
 
